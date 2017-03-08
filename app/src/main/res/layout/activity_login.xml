@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimary"
+    tools:context="com.mx.tuukul.tuukul.Login"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/cientoVeinte"
+        android:layout_height="@dimen/cientoVeinte"
+        android:id="@+id/imageView2"
+        android:src="@mipmap/icon_prin"
+        android:layout_marginTop="@dimen/sesenta"
+        android:contentDescription="@string/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/once"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dieciSeis">
+
+        <ImageView
+            android:layout_width="@dimen/treinta"
+            android:layout_height="@dimen/treinta"
+            android:id="@+id/iconUser"
+            android:src="@mipmap/ic_face_white_48dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@string/user"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:textColor="@color/colorWhite"
+            android:backgroundTint="@android:color/white"
+            android:layout_marginBottom="@dimen/dieciSeis" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="@dimen/treinta"
+            android:layout_height="@dimen/treinta"
+            android:id="@+id/iconRePassword"
+            android:src="@mipmap/ic_lock_white_36dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Password"
+            android:ems="10"
+            android:id="@+id/editText4"
+            android:textColor="@color/colorWhite"
+            android:backgroundTint="@android:color/white"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Entrar"
+        android:id="@+id/Start"
+        android:layout_marginBottom="@dimen/dieciSeis"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dieciSeis"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/forgetPassword"
+        android:onClick="" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dieciSeis">
+        <ImageView
+            android:layout_width="@dimen/veintitres"
+            android:layout_height="@dimen/veintitres"
+            android:src="@mipmap/fb_logo"
+            android:layout_marginRight="@dimen/once"
+            android:layout_marginTop="2dp"
+            android:onClick="" />
+        <ImageView
+            android:layout_width="@dimen/treinta"
+            android:layout_height="@dimen/treinta"
+            android:src="@mipmap/ic_email_white_36dp"
+            android:layout_marginLeft="@dimen/once"
+            android:onClick=""/>
+    </LinearLayout>
+
+</LinearLayout>

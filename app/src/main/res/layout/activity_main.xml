@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.mx.tuukul.tuukul.MainActivity">
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="@string/Registrarse"
+        android:id="@+id/Registrarse"
+        android:layout_gravity="right|center_vertical"
+        android:background="@drawable/radious"
+        android:layout_below="@+id/imageView"
+        android:layout_alignRight="@+id/Saltar"
+        android:layout_alignEnd="@+id/Saltar"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp"
+        android:onClick="openSingup"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="@string/Entrar"
+        android:id="@+id/Entrar"
+        android:layout_gravity="center"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/radious"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/Saltar"
+        android:layout_alignStart="@+id/Saltar"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:onClick="openLogin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Saltar"
+        android:id="@+id/Saltar"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Registrarse"
+        android:layout_centerHorizontal="true"
+        android:onClick="Skip"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@mipmap/icon_prin"
+        android:layout_marginBottom="49dp"
+        android:layout_above="@+id/Entrar"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
