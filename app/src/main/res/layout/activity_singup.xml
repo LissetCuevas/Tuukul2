@@ -37,7 +37,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="@string/user"
+            android:hint="Usuario"
+            android:textColorHint="@color/colorHint"
             android:ems="10"
             android:id="@+id/editText"
             android:textColor="@color/colorWhite"
@@ -62,14 +63,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
-            android:text="@string/email"
+            android:hint="@string/email"
+            android:textColorHint="@color/colorHint"
             android:ems="10"
             android:id="@+id/editText2"
             android:textColor="@color/colorWhite"
             android:backgroundTint="@android:color/white"/>
     </LinearLayout>
 
-    <LinearLayout
+    <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -80,8 +82,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:id="@+id/Man"
-            android:backgroundTint="@android:color/white" />
+            android:id="@+id/Radio_Man"
+            android:backgroundTint="@android:color/white"
+            android:onClick="onRadioButtonClicked"/>
 
         <ImageView
             android:layout_width="@dimen/treintaCuatro"
@@ -93,10 +96,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:id="@+id/Woman"
-            android:backgroundTint="@android:color/white" />
-
-    </LinearLayout>
+            android:id="@+id/Radio_Woman"
+            android:backgroundTint="@android:color/white"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -112,7 +115,9 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Password"
+            android:inputType="textPassword"
+            android:hint="@string/Password"
+            android:textColorHint="@color/colorHint"
             android:ems="10"
             android:id="@+id/editText4"
             android:textColor="@color/colorWhite"
@@ -134,6 +139,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
+            android:hint="Repite contraseña"
+            android:textColorHint="@color/colorHint"
             android:ems="10"
             android:id="@+id/editText3"
             android:textColor="@color/colorWhite"
