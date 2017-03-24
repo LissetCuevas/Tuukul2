@@ -33,8 +33,9 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/banner"/>
+            android:layout_height="match_parent"
+            android:src="@mipmap/banner"
+            android:layout_marginBottom="@dimen/dieciSeis"/>
 
         <LinearLayout
             android:layout_width="match_parent"
