@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/colorRed"
     android:gravity="center_vertical"
     android:orientation="horizontal"
@@ -9,15 +10,16 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    tools:context=".MenuActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="85dp"
         android:layout_height="85dp"
         android:src="@mipmap/personpig"
-        android:layout_marginLeft="@dimen/veintitres"
-        android:layout_marginRight="@dimen/dieciSeis"/>
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="10dp"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -38,6 +40,15 @@
             android:text="@string/free"
             android:textSize="@dimen/dieciocho"/>
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_settings_white_18dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0"
+        android:id="@id/settings"
+        android:onClick="openSettings"/>
 
 
 </LinearLayout>

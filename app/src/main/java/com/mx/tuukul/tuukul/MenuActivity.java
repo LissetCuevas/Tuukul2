@@ -104,5 +104,9 @@ public class MenuActivity extends AppCompatActivity
         return true;
     }
 
+    public void openSettings(View view) {
+        Intent intent = new Intent(MenuActivity.this, SettingActivity.class);
+        startActivity(intent);
+    }
 
 }
