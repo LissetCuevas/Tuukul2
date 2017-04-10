@@ -91,10 +91,6 @@ public class NearmeActivity extends AppCompatActivity
             Intent intent = new Intent(NearmeActivity.this, NearmeActivity.class);
             startActivity(intent);
 
-        } else if (id == R.id.Categories) {
-            Intent intent = new Intent(NearmeActivity.this, CategoriesActivity.class);
-            startActivity(intent);
-
         } else if (id == R.id.share) {
 
         }

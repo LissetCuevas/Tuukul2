@@ -91,10 +91,6 @@ public class FavoritesActivity extends AppCompatActivity
                 Intent intent = new Intent(FavoritesActivity.this, NearmeActivity.class);
                 startActivity(intent);
 
-            } else if (id == R.id.Categories) {
-                Intent intent = new Intent(FavoritesActivity.this, CategoriesActivity.class);
-                startActivity(intent);
-
             } else if (id == R.id.share) {
 
             }

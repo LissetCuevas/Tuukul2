@@ -37,4 +37,6 @@
     <string name="list">list</string>
     <string name="title_activity_list">ListActivity</string>
     <string name="settings">Configuraciones</string>
+    <string name="start">start</string>
+    <string name="stop">start</string>
 </resources>

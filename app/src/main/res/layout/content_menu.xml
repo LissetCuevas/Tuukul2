@@ -31,11 +31,42 @@
         android:orientation="vertical"
         android:paddingTop="@dimen/dieciSeis">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@mipmap/banner"
-            android:layout_marginBottom="@dimen/dieciSeis"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/buttons"
+            android:gravity="center" >
+
+            <ImageSwitcher
+                android:id="@+id/imageSwitcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </ImageSwitcher>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/buttonStart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="start"
+                android:text="@string/start" />
+
+            <Button
+                android:id="@+id/buttonStop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="stop"
+                android:text="@string/stop" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"

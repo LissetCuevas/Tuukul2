@@ -18,10 +18,6 @@
             android:id="@+id/NearMe"
             android:icon="@mipmap/ic_room_black_36dp"
             android:title="@string/Nearme" />
-        <item
-            android:id="@+id/Categories"
-            android:icon="@mipmap/ic_apps_black_36dp"
-            android:title="@string/categories" />
     </group>
 
     <item>

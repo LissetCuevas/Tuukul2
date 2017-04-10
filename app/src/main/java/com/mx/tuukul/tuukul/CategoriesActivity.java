@@ -91,10 +91,6 @@ public class CategoriesActivity extends AppCompatActivity
             Intent intent = new Intent(CategoriesActivity.this, NearmeActivity.class);
             startActivity(intent);
 
-        } else if (id == R.id.Categories) {
-            Intent intent = new Intent(CategoriesActivity.this, CategoriesActivity.class);
-            startActivity(intent);
-
         } else if (id == R.id.share) {
 
         }

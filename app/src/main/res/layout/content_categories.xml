@@ -27,52 +27,64 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="@dimen/dieciSeis"
+        android:paddingTop="@dimen/dieciSeis"
+        android:paddingLeft="@dimen/dieciSeis"
+        android:paddingBottom="15dp"
         android:onClick="">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/ic_restaurant_black_24dp"
             android:layout_marginRight="@dimen/once"
-            android:background="@drawable/circlecategory"/>
+            android:background="@drawable/circlecategory"
+            android:padding="5dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Alimentos y bebidas"/>
+            android:text="Alimentos y bebidas"
+            android:gravity="center_vertical"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="@dimen/dieciSeis">
+        android:padding="@dimen/dieciSeis"
+        android:paddingLeft="@dimen/dieciSeis"
+        android:paddingBottom="15dp">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/ic_local_pharmacy_black_24dp"
             android:layout_marginRight="@dimen/once"
-            android:background="@drawable/circlecategory"/>
+            android:background="@drawable/circlecategory"
+            android:padding="5dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Medicamentos"/>
+            android:text="Medicamentos"
+            android:gravity="center_vertical"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="@dimen/dieciSeis">
+        android:paddingLeft="@dimen/dieciSeis"
+        android:paddingBottom="15dp">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/ic_school_black_24dp"
             android:layout_marginRight="@dimen/once"
-            android:background="@drawable/circlecategory"/>
+            android:background="@drawable/circlecategory"
+            android:padding="5dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Utiles escolares"/>
+            android:text="Utiles escolares"
+            android:gravity="center_vertical"/>
     </LinearLayout>
 
 
@@ -80,35 +92,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="@dimen/dieciSeis">
+        android:paddingLeft="@dimen/dieciSeis"
+        android:paddingBottom="15dp">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/ic_pets_black_24dp"
             android:layout_marginRight="@dimen/once"
-            android:background="@drawable/circlecategory"/>
+            android:background="@drawable/circlecategory"
+            android:padding="5dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Accesorios para mascotas"/>
+            android:text="Accesorios para mascotas"
+            android:gravity="center_vertical"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="@dimen/dieciSeis">
+        android:paddingLeft="@dimen/dieciSeis"
+        android:paddingBottom="15dp">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/ic_computer_black_24dp"
             android:layout_marginRight="@dimen/once"
-            android:background="@drawable/circlecategory"/>
+            android:background="@drawable/circlecategory"
+            android:padding="5dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Electronica"/>
+            android:text="Electronica"
+            android:gravity="center_vertical"/>
     </LinearLayout>
-
 
 </LinearLayout>

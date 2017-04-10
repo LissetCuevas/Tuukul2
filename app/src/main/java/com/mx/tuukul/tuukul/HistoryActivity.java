@@ -91,10 +91,6 @@ public class HistoryActivity extends AppCompatActivity
             Intent intent = new Intent(HistoryActivity.this, NearmeActivity.class);
             startActivity(intent);
 
-        } else if (id == R.id.Categories) {
-            Intent intent = new Intent(HistoryActivity.this, CategoriesActivity.class);
-            startActivity(intent);
-
         } else if (id == R.id.share) {
 
         }
