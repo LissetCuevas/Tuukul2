@@ -1,7 +1,9 @@
 package com.mx.tuukul.tuukul;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 import android.content.Intent;
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -14,26 +16,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
-import java.util.Timer;
-import java.util.TimerTask;
+import android.app.Activity;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.ViewSwitcher.ViewFactory;
 
+
 public class MenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private ImageSwitcher imageSwitcher;
-
     private int[] gallery = { R.drawable.banner1, R.drawable.banner2, R.drawable.banner3};
-
     private int position;
-
     private static final Integer DURATION = 2500;
-
     private Timer timer = null;
 
     @Override
@@ -60,12 +57,29 @@ public class MenuActivity extends AppCompatActivity
             }
         });
 
-        // Set animations
-        // https://danielme.com/2013/08/18/diseno-android-transiciones-entre-activities/
         Animation fadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in);
         Animation fadeOut = AnimationUtils.loadAnimation(this, R.anim.fade_out);
         imageSwitcher.setInAnimation(fadeIn);
         imageSwitcher.setOutAnimation(fadeOut);
+
+        timer = new Timer();
+        timer.scheduleAtFixedRate(new TimerTask() {
+
+            public void run() {
+                // avoid exception:
+                // "Only the original thread that created a view hierarchy can touch its views"
+                runOnUiThread(new Runnable() {
+                    public void run() {
+                        imageSwitcher.setImageResource(gallery[position]);
+                        position++;
+                        if (position == gallery.length) {
+                            position = 0;
+                        }
+                    }
+                });
+            }
+
+        }, 0, DURATION);
     }
 
     @Override
@@ -137,60 +151,4 @@ public class MenuActivity extends AppCompatActivity
         Intent intent = new Intent(MenuActivity.this, SettingActivity.class);
         startActivity(intent);
     }
-
-
-    public void start(View button) {
-        if (timer != null) {
-            timer.cancel();
-        }
-        position = 0;
-        startSlider();
-    }
-
-    public void stop(View button) {
-        if (timer != null) {
-            timer.cancel();
-            timer = null;
-        }
-    }
-
-    public void startSlider() {
-        timer = new Timer();
-        timer.scheduleAtFixedRate(new TimerTask() {
-
-            public void run() {
-                // avoid exception:
-                // "Only the original thread that created a view hierarchy can touch its views"
-                runOnUiThread(new Runnable() {
-                    public void run() {
-                        imageSwitcher.setImageResource(gallery[position]);
-                        position++;
-                        if (position == gallery.length) {
-                            position = 0;
-                        }
-                    }
-                });
-            }
-
-        }, 0, DURATION);
-    }
-
-    // Stops the slider when the Activity is going into the background
-    @Override
-    protected void onPause() {
-        super.onPause();
-        if (timer != null) {
-            timer.cancel();
-        }
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if (timer != null) {
-            startSlider();
-        }
-
-    }
-
 }
