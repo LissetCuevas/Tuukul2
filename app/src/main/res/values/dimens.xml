@@ -17,4 +17,5 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="dieciocho">18dp</dimen>
     <dimen name="heighBanners">180dp</dimen>
+    <dimen name="catorce">14dp</dimen>
 </resources>

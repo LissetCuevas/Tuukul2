@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Cap-Cap</string>
-
     <string name="Entrar">Entrar</string>
     <string name="Registrarse">Registrarse</string>
     <string name="Saltar">Saltar</string>
@@ -37,4 +36,6 @@
     <string name="list">list</string>
     <string name="title_activity_list">ListActivity</string>
     <string name="settings">Configuraciones</string>
+
+    <string name="title_activity_near">Tiendas cerca</string>
 </resources>

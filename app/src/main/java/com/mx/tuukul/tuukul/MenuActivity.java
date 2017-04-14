@@ -135,7 +135,7 @@ public class MenuActivity extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.NearMe) {
-            Intent intent = new Intent(MenuActivity.this, NearmeActivity.class);
+            Intent intent = new Intent(MenuActivity.this, NearActivity.class);
             startActivity(intent);
 
         } else if (id == R.id.share) {
