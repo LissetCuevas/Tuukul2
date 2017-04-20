@@ -154,6 +154,7 @@
         android:id="@+id/FinReg"
         android:layout_marginBottom="32dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/dieciSeis"/>
+        android:layout_marginTop="@dimen/dieciSeis"
+        android:onClick="checkRegistro"/>
 
 </LinearLayout>
