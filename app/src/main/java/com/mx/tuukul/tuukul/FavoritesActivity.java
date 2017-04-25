@@ -64,7 +64,6 @@ public class FavoritesActivity extends AppCompatActivity
                 Intent intent = new Intent(FavoritesActivity.this, ListActivity.class);
                 startActivity(intent);
                 return true;
-            }else if(id == R.id.action_search){
             }
 
             return super.onOptionsItemSelected(item);
@@ -88,7 +87,7 @@ public class FavoritesActivity extends AppCompatActivity
                 startActivity(intent);
 
             } else if (id == R.id.NearMe) {
-                Intent intent = new Intent(FavoritesActivity.this, NearmeActivity.class);
+                Intent intent = new Intent(FavoritesActivity.this, NearActivity.class);
                 startActivity(intent);
 
             } else if (id == R.id.share) {

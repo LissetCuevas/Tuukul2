@@ -38,4 +38,6 @@
     <string name="settings">Configuraciones</string>
 
     <string name="title_activity_near">Tiendas cerca</string>
+    <string name="title_activity_soap">SoapActivity</string>
+    <string name="title_activity_product">ProductActivity</string>
 </resources>

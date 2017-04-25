@@ -64,7 +64,6 @@ public class HistoryActivity extends AppCompatActivity
             Intent intent = new Intent(HistoryActivity.this, ListActivity.class);
             startActivity(intent);
             return true;
-        }else if(id == R.id.action_search){
         }
 
         return super.onOptionsItemSelected(item);
@@ -88,7 +87,7 @@ public class HistoryActivity extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.NearMe) {
-            Intent intent = new Intent(HistoryActivity.this, NearmeActivity.class);
+            Intent intent = new Intent(HistoryActivity.this, NearActivity.class);
             startActivity(intent);
 
         } else if (id == R.id.share) {

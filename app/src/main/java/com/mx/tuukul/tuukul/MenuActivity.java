@@ -111,7 +111,6 @@ public class MenuActivity extends AppCompatActivity
             Intent intent = new Intent(MenuActivity.this, ListActivity.class);
             startActivity(intent);
             return true;
-        }else if(id == R.id.action_search){
         }
 
         return super.onOptionsItemSelected(item);

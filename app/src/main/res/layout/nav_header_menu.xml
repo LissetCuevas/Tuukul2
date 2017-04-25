@@ -41,14 +41,4 @@
             android:textSize="@dimen/dieciocho"/>
     </LinearLayout>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_settings_white_18dp"
-        android:layout_gravity="bottom"
-        android:layout_weight="0"
-        android:id="@id/settings"
-        android:onClick="openSettings"/>
-
-
 </LinearLayout>

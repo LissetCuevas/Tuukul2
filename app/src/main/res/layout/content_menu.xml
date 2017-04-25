@@ -24,11 +24,13 @@
 
     </android.support.design.widget.AppBarLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"
         android:orientation="vertical">
 
         <ImageSwitcher
@@ -38,10 +40,11 @@
         </ImageSwitcher>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingTop="@dimen/dieciSeis">
+            android:paddingTop="@dimen/dieciSeis"
+            android:layout_gravity="center_horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -49,82 +52,19 @@
                 android:orientation="vertical"
                 android:background="@drawable/itemradious"
                 android:padding="8dp"
-                android:layout_marginRight="5dp">
+                android:layout_marginRight="4dp"
+                android:onClick="">
                 <ImageView
-                    android:layout_width="129dp"
-                    android:layout_height="129dp"
-                    android:src="@mipmap/lechita"/>
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@mipmap/eggs"/>
+                <TextView
+                    android:layout_width="124dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_favorite_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginRight="4dp"/>
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_add_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"/>
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_description_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginLeft="4dp"/>
-                </LinearLayout>
+                    android:text="Huevo"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"/>
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@drawable/itemradious"
-                android:layout_marginLeft="5dp">
-                <ImageView
-                    android:layout_width="129dp"
-                    android:layout_height="129dp"
-                    android:src="@mipmap/donitas"
-                    />
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="8dp">
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_favorite_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginRight="4dp"/>
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_add_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"/>
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_description_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginLeft="4dp"/>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingTop="@dimen/dieciSeis">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -132,81 +72,28 @@
                 android:orientation="vertical"
                 android:background="@drawable/itemradious"
                 android:padding="8dp"
-                android:layout_marginRight="5dp">
+                android:layout_marginLeft="4dp"
+                android:onClick="">
                 <ImageView
-                    android:layout_width="129dp"
-                    android:layout_height="129dp"
-                    android:src="@mipmap/lechita"/>
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@mipmap/soap"/>
+                <TextView
+                    android:layout_width="124dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_favorite_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginRight="4dp"/>
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_add_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"/>
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_description_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginLeft="4dp"/>
-                </LinearLayout>
+                    android:text="Jabón"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"/>
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@drawable/itemradious"
-                android:layout_marginLeft="5dp">
-                <ImageView
-                    android:layout_width="129dp"
-                    android:layout_height="129dp"
-                    android:src="@mipmap/donitas"
-                    />
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="8dp">
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_favorite_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginRight="4dp"/>
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_add_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"/>
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_description_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginLeft="4dp"/>
-                </LinearLayout>
-            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingTop="@dimen/dieciSeis">
+            android:paddingTop="@dimen/dieciSeis"
+            android:layout_gravity="center_horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -214,35 +101,18 @@
                 android:orientation="vertical"
                 android:background="@drawable/itemradious"
                 android:padding="8dp"
-                android:layout_marginRight="5dp">
+                android:layout_marginRight="4dp"
+                android:onClick="">
                 <ImageView
-                    android:layout_width="129dp"
-                    android:layout_height="129dp"
-                    android:src="@mipmap/lechita"/>
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@mipmap/rice"/>
+                <TextView
+                    android:layout_width="124dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_favorite_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginRight="4dp"/>
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_add_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"/>
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_description_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginLeft="4dp"/>
-                </LinearLayout>
+                    android:text="Arroz"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -250,45 +120,78 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:background="@drawable/itemradious"
-                android:layout_marginLeft="5dp">
+                android:padding="8dp"
+                android:layout_marginLeft="4dp"
+                android:onClick="">
                 <ImageView
-                    android:layout_width="129dp"
-                    android:layout_height="129dp"
-                    android:src="@mipmap/donitas"
-                    />
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@mipmap/frijol"/>
+                <TextView
+                    android:layout_width="124dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="8dp">
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_favorite_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginRight="4dp"/>
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_add_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"/>
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_description_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginLeft="4dp"/>
-                </LinearLayout>
+                    android:text="Frijol"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"/>
             </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dieciSeis"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/itemradious"
+                android:padding="8dp"
+                android:layout_marginRight="4dp"
+                android:onClick="">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@mipmap/oil"/>
+                <TextView
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:text="Aceite"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/itemradious"
+                android:padding="8dp"
+                android:layout_marginLeft="4dp"
+                android:onClick="">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@mipmap/sopa"/>
+                <TextView
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pastas"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingTop="@dimen/dieciSeis">
+            android:paddingTop="@dimen/dieciSeis"
+            android:layout_gravity="center_horizontal"
+            android:onClick="">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -296,35 +199,17 @@
                 android:orientation="vertical"
                 android:background="@drawable/itemradious"
                 android:padding="8dp"
-                android:layout_marginRight="5dp">
+                android:layout_marginRight="4dp">
                 <ImageView
-                    android:layout_width="129dp"
-                    android:layout_height="129dp"
-                    android:src="@mipmap/lechita"/>
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@mipmap/panales"/>
+                <TextView
+                    android:layout_width="124dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_favorite_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginRight="4dp"/>
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_add_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"/>
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_description_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginLeft="4dp"/>
-                </LinearLayout>
+                    android:text="Pañales"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -332,39 +217,72 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:background="@drawable/itemradious"
-                android:layout_marginLeft="5dp">
+                android:padding="8dp"
+                android:layout_marginLeft="4dp"
+                android:onClick="">
                 <ImageView
-                    android:layout_width="129dp"
-                    android:layout_height="129dp"
-                    android:src="@mipmap/donitas"
-                    />
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@mipmap/milk"/>
+                <TextView
+                    android:layout_width="124dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="8dp">
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_favorite_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginRight="4dp"/>
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_add_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"/>
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_description_white_18dp"
-                        android:background="@drawable/radio_button"
-                        android:layout_marginLeft="4dp"/>
-                </LinearLayout>
+                    android:text="Leche"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"/>
             </LinearLayout>
+
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dieciSeis"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/itemradious"
+                android:padding="8dp"
+                android:layout_marginRight="4dp"
+                android:onClick="">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@mipmap/shampoo"/>
+                <TextView
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:text="Shampoo"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/itemradious"
+                android:padding="8dp"
+                android:layout_marginLeft="4dp"
+                android:onClick="">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@mipmap/papel"/>
+                <TextView
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:text="Papel higienico"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
     </LinearLayout>
-
+    </ScrollView>
 </LinearLayout>
