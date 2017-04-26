@@ -30,14 +30,11 @@
     <string name="search">search</string>
     <string name="title_activity_favorites">Favoritos</string>
     <string name="title_activity_history">Historial</string>
-    <string name="title_activity_nearme">Tiendas cerca</string>
-    <string name="title_activity_categories">Categorias</string>
     <string name="title_activity_setting">Configuraciones</string>
     <string name="list">list</string>
-    <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_list">Lista de compras</string>
     <string name="settings">Configuraciones</string>
 
     <string name="title_activity_near">Tiendas cerca</string>
-    <string name="title_activity_soap">SoapActivity</string>
     <string name="title_activity_product">ProductActivity</string>
 </resources>
