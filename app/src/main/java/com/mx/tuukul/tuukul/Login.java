@@ -129,7 +129,11 @@ public class Login extends AppCompatActivity {
                     }
 
                     // Pass data to onPostExecute method
-                    return(result.toString());
+                    String parametros = result.toString();
+                    String[] p = parametros.split("|");
+                    String idUs = p[0];
+                    String boo = p[1];
+                    return(boo);
 
                 }else{
 
