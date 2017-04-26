@@ -230,7 +230,7 @@ public class MenuActivity extends AppCompatActivity
             try {
 
                 // Enter URL address where your php file resides
-                url = new URL("http://tecnaat.com/Tuukul_PHP/productos.php");
+                url = new URL("http://tecnaat.com/Tuukul_PHP/presentacines.php");
                 //url = new URL("C:\\Users\\Ale\\Documents\\Technovation\\Codigo\\login.inc.php");
 
             } catch (MalformedURLException e) {
@@ -289,6 +289,12 @@ public class MenuActivity extends AppCompatActivity
                     }
 
                     // Pass data to onPostExecute method
+                    String[] g;
+                    String va = result.toString();
+                    String[] p= va.split("|");
+                    for (int i=0; i < p.length; i++ ){
+                         g = p[i].split(",");
+                    }
 
                     return(result.toString());
 

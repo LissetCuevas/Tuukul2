@@ -53,7 +53,7 @@
                 android:background="@drawable/itemradious"
                 android:padding="8dp"
                 android:layout_marginRight="4dp"
-                android:onClick="">
+                android:onClick="checkProducto">
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="130dp"
@@ -73,7 +73,7 @@
                 android:background="@drawable/itemradious"
                 android:padding="8dp"
                 android:layout_marginLeft="4dp"
-                android:onClick="">
+                android:onClick="checkProducto">
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="130dp"
@@ -102,7 +102,7 @@
                 android:background="@drawable/itemradious"
                 android:padding="8dp"
                 android:layout_marginRight="4dp"
-                android:onClick="">
+                android:onClick="checkProducto">
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="130dp"
@@ -122,7 +122,7 @@
                 android:background="@drawable/itemradious"
                 android:padding="8dp"
                 android:layout_marginLeft="4dp"
-                android:onClick="">
+                android:onClick="checkProducto">
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="130dp"
@@ -150,7 +150,7 @@
                 android:background="@drawable/itemradious"
                 android:padding="8dp"
                 android:layout_marginRight="4dp"
-                android:onClick="">
+                android:onClick="checkProducto">
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="130dp"
@@ -170,7 +170,7 @@
                 android:background="@drawable/itemradious"
                 android:padding="8dp"
                 android:layout_marginLeft="4dp"
-                android:onClick="">
+                android:onClick="checkProducto">
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="130dp"
@@ -191,7 +191,7 @@
             android:orientation="horizontal"
             android:paddingTop="@dimen/dieciSeis"
             android:layout_gravity="center_horizontal"
-            android:onClick="">
+            android:onClick="checkProducto">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -219,7 +219,7 @@
                 android:background="@drawable/itemradious"
                 android:padding="8dp"
                 android:layout_marginLeft="4dp"
-                android:onClick="">
+                android:onClick="checkProducto">
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="130dp"
@@ -248,7 +248,7 @@
                 android:background="@drawable/itemradious"
                 android:padding="8dp"
                 android:layout_marginRight="4dp"
-                android:onClick="">
+                android:onClick="checkProducto">
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="130dp"
@@ -268,7 +268,7 @@
                 android:background="@drawable/itemradious"
                 android:padding="8dp"
                 android:layout_marginLeft="4dp"
-                android:onClick="">
+                android:onClick="checkProducto">
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="130dp"

@@ -26,6 +26,7 @@ public class Login extends AppCompatActivity {
 //Hola12
     private EditText etEmail;
     private EditText etPassword;
+    public String idUs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -131,7 +132,7 @@ public class Login extends AppCompatActivity {
                     // Pass data to onPostExecute method
                     String parametros = result.toString();
                     String[] p = parametros.split("|");
-                    String idUs = p[0];
+                    idUs = p[0];
                     String boo = p[1];
                     return(boo);
 

@@ -40,4 +40,6 @@
     <string name="title_activity_near">Tiendas cerca</string>
     <string name="title_activity_soap">SoapActivity</string>
     <string name="title_activity_product">ProductActivity</string>
+    <string name="huevo">huevo</string>
+    <string name="google_maps_key">google_maps_key</string>
 </resources>
